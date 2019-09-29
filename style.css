@@ -12,6 +12,11 @@ body{
     background-size: cover;
     background-position: center;
 }
+@media only screen and (max-width: 600px) {
+    body{
+        background-image: url(bg2.svg);
+    }
+}
 
 .container{
     min-width: 100vw;
@@ -43,6 +48,7 @@ body{
 .location{
     font-size: 8rem;
     font-family: 'Fira Sans',sans-serif;
+    /* height: 92px; */
 }
 .temp{
     font-size: 30rem;
@@ -139,10 +145,6 @@ li:hover{
     .container {
         flex-direction: column;
         overflow: hidden;
-        background-image: url(bg2.svg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
     }
     .cities{
         top: 25px;
@@ -175,6 +177,7 @@ li:hover{
     .location{
         width: 100%;
         font-size: 5rem;
+        height: 38px;   
     }
     .detail{
         margin-top: 0;
